@@ -22,7 +22,3 @@ files {
     'html/style.css',
     'html/script.js'
 }
-
-escrow_ignore {
-    'shared/config.lua'
-}

@@ -21,6 +21,24 @@ Created by **R1 Scripts**.
 
 ---
 
+## Notification Types
+
+Default notification types included:
+
+- success
+- error
+- warning
+- info
+- system
+
+You can add more notification types inside:
+
+```lua
+shared/config.lua
+```
+
+---
+
 ## Installation
 
 1. Place `R1_NOTIFY` inside your `resources` folder.

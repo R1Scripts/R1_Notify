@@ -47,7 +47,7 @@ function showNotify(data) {
     if (data.sound) {
         try {
             sound.currentTime = 0;
-            sound.volume = 0.25;
+            sound.volume = Number(data.volume) || 0.25;
             sound.play();
         } catch (e) {}
     }

@@ -1,6 +1,6 @@
 # R1_NOTIFY
 
-**R1_NOTIFY** is an advanced custom notification system for FiveM, designed with a modern NUI interface, smooth animations, configurable notification types, exports, and client events.
+**R1_NOTIFY** is a custom notification system for FiveM with a modern NUI design, smooth animations and simple usage through exports or events.
 
 Created by **R1 Scripts**.
 
@@ -10,31 +10,39 @@ Created by **R1 Scripts**.
 
 ## Features
 
-- Modern NUI notification design
-- Multiple notification types
-- Configurable position
-- Configurable duration
-- Configurable max notifications
+- Modern NUI notifications
+- Smooth animations
+- Custom types
+- Custom position
 - Sound support
-- FontAwesome icons
-- Export support
-- Client event support
-- Easy integration with any FiveM script
-- Lightweight and simple to configure
+- Easy exports
+- Client and server events
+- No framework required
 
 ---
 
-## Notification Types
+## Installation
 
-Default notification types included:
+1. Place `R1_NOTIFY` inside your `resources` folder.
+2. Add this to your `server.cfg`:
 
-- success
-- error
-- warning
-- info
-- system
+```cfg
+ensure R1_NOTIFY
+```
 
-You can add more notification types inside:
+Usage
 
-```lua
-shared/config.lua
+Client Export
+```
+exports['R1_NOTIFY']:Notify('success', 'Success', 'Action completed successfully.', 5000)
+```
+
+Client Event
+```
+TriggerEvent('R1_NOTIFY:client:Notify', 'error', 'Error', 'You do not have permission.', 5000)
+```
+
+Server Event
+```
+TriggerClientEvent('R1_NOTIFY:client:Notify', source, 'info', 'Server', 'Notification sent from server.', 5000)
+```

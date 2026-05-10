@@ -66,3 +66,19 @@ Server Event
 ```
 TriggerClientEvent('R1_NOTIFY:client:Notify', source, 'info', 'Server', 'Notification sent from server.', 5000)
 ```
+
+---
+
+## Example
+
+```
+RegisterCommand('testnotify', function()
+    exports['R1_NOTIFY']:Notify('success', 'R1 Notify', 'Notification system is working.', 5000)
+end)
+```
+
+---
+
+## Credits
+
+Developed By R1 SCRIPTS: https://r1-scripts.tebex.io/

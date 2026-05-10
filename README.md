@@ -30,9 +30,6 @@ Default notification types included:
 - error
 - warning
 - info
-- police
-- mechanic
-- bank
 - system
 
 You can add more notification types inside:

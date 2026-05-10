@@ -42,7 +42,8 @@ shared/config.lua
 ## Installation
 
 1. Place `R1_Notify` inside your `resources` folder.
-2. Add this to your `server.cfg`:
+2. Rename folder `R1_Notify-main` for `R1_Notify`
+3. Add this to your `server.cfg`:
 
 ```cfg
 ensure R1_Notify

@@ -19,7 +19,8 @@ local function Notify(type, title, message, duration)
         icon = notifyData.icon,
         color = notifyData.color,
         position = Config.Position,
-        sound = Config.Sound,
+        sound = Config.Sound.Active,
+        volume = Config.Sound.Volume,
         max = Config.MaxNotifications
     })
 end
@@ -33,4 +34,17 @@ end)
 -- Comando de prueba
 RegisterCommand('r1notifytest', function()
     Notify('success', 'R1 NOTIFY', 'Notificación de prueba funcionando correctamente.', 5000)
+
+    Wait(500)
+    Notify('error', 'R1 NOTIFY', 'Notificación de prueba funcionando correctamente.', 5000)
+
+    Wait(500)
+    Notify('warning', 'R1 NOTIFY', 'Notificación de prueba funcionando correctamente.', 5000)
+
+    Wait(500)
+    Notify('info', 'R1 NOTIFY', 'Notificación de prueba funcionando correctamente.', 5000)
+
+    Wait(500)
+    Notify('system', 'R1 NOTIFY', 'Notificación de prueba funcionando correctamente.', 5000)
+
 end)

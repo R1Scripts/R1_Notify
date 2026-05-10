@@ -15,7 +15,10 @@ Config.DefaultDuration = 5000
 
 Config.MaxNotifications = 5
 
-Config.Sound = true
+Config.Sound = {
+    Active = true,
+    Volume = 0.05
+}
 
 Config.Types = {
     success = {

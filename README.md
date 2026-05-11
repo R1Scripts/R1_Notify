@@ -82,4 +82,5 @@ end)
 
 ## Credits
 
-Developed By R1 SCRIPTS: https://r1-scripts.tebex.io/
+- Developed By R1 SCRIPTS: https://r1-scripts.tebex.io/
+- Discord R1 SCRIPTS: https://discord.com/invite/VXgNwKb9Ds

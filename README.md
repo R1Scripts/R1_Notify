@@ -55,17 +55,17 @@ ensure R1_Notify
 
 Client Export
 ```
-exports['R1_NOTIFY']:Notify('success', 'Success', 'Action completed successfully.', 5000)
+exports['R1_Notify']:Notify('success', 'Success', 'Action completed successfully.', 5000)
 ```
 
 Client Event
 ```
-TriggerEvent('R1_NOTIFY:client:Notify', 'error', 'Error', 'You do not have permission.', 5000)
+TriggerEvent('R1_Notify:client:Notify', 'error', 'Error', 'You do not have permission.', 5000)
 ```
 
 Server Event
 ```
-TriggerClientEvent('R1_NOTIFY:client:Notify', source, 'info', 'Server', 'Notification sent from server.', 5000)
+TriggerClientEvent('R1_Notify:client:Notify', source, 'info', 'Server', 'Notification sent from server.', 5000)
 ```
 
 ---
@@ -74,7 +74,7 @@ TriggerClientEvent('R1_NOTIFY:client:Notify', source, 'info', 'Server', 'Notific
 
 ```
 RegisterCommand('testnotify', function()
-    exports['R1_NOTIFY']:Notify('success', 'R1 Notify', 'Notification system is working.', 5000)
+    exports['R1_Notify']:Notify('success', 'R1 Notify', 'Notification system is working.', 5000)
 end)
 ```
 
